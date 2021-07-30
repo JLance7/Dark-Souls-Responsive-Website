@@ -1,0 +1,282 @@
+/* This is the styling */
+*{
+    font-family: monospace;
+    font-size: 20px;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: green;
+    overflow-x: hidden;
+}
+.logo{
+    height: 100px!important;
+    width: 100px!important;
+    border-radius: 50%;
+    border-color: #ff3856;
+    border-style: solid;
+    border-width: 5px;
+    padding: 0;
+    margin: 5px;
+    margin-left: 5px!important;
+}
+.nav-link{
+    margin: 3px;
+    font-size: 30px!important;
+    padding-right: 30px;
+    color: white!important;
+}
+.navbar-nav{
+    text-align: right;
+    margin-right: 40px;
+}
+.nav-background{
+    background-color: black;
+    padding: 3px;
+}
+.pages{
+    margin-top: 20px;
+}
+.link-style{
+    background-color: black;
+}
+.link-style:hover{
+    background-color: #ff3856;
+    padding: 12px;
+}
+.main-background{
+    background-color: #ff3856;
+    margin-top: -30px;
+}
+h1, h1 strong {
+    font-size: 80px;
+    text-align: center;
+}
+first-image{
+    padding: 10px;
+    margin-top: 50px;
+    background-color: blue;
+}
+.knight{
+    width: 100%;
+    height: auto;
+    border: black solid 4px;
+}
+.asked{
+    margin-top: 40px;
+}
+.title{
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+.next-part{
+    padding-top: 50px;
+    padding-left: 20px;
+}
+.knight2{
+    width: 100%;
+    height: auto;
+    border: black solid 4px;
+    max-height: 900px;
+    max-width: 700px;
+    margin-top: 80px;
+    margin-left: 140px!important;
+}
+h2 {
+    font-size: 50px;
+    text-align: center;
+}
+hr{
+    margin-top: 40px;
+    border: black solid 1px;
+}
+@media (max-width: 1800px) { /*change image margin so it doesn't go offscreen when screen size changes*/
+    .knight2{
+        margin-left: 10px!important;
+    }
+}
+.knight3{
+    width: 100%;
+    height: auto;
+    border: black solid 4px;
+    max-height: 900px;
+    max-width: 700px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+.knight4{
+    width: 100%!important;
+    height: 100%!important;
+    border: black solid 4px;
+    max-height: 400px;
+    max-width: 600px;
+    margin-top: 80px;
+}
+.text{
+    margin-left: -30px;
+}
+.footer1{
+    background-color: black;
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: -5px;
+
+}
+.link1, link2, link3{
+    padding-left: 50px;
+    padding-right: 150px;
+}
+.sun{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: praise-it;
+    animation-duration: 15s;
+}
+@keyframes praise-it {
+    0%   {left:0px; top:0px;}
+    25%  {left:800px; top:0px;}
+    50%  {left:800px; top:600px;}
+    75%  {left:0px; top:600px;}
+    100% {left:0px; top:0px;}
+}
+.sun2{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: praise-it2;
+    animation-duration: 15s;
+}
+@keyframes praise-it2 {
+    0%   {left:0px; top:0px;}
+    25%  {left:0px; top:600px;}
+    50%  {left:700px; top:600px;}
+    75%  {left:700px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+.back2{
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+}
+.sun3{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: praise-it3;
+    animation-duration: 15s;
+}
+.sun4{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: praise-it4;
+    animation-duration: 15s;
+}
+.sun5{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: praise-it5;
+    animation-duration: 15s;
+}
+@keyframes praise-it3 {
+    0%   {left:27px; top:100px;}
+    25%  {left:60px; top:300px;}
+    43%  {left:300px; top:77px;}
+    75%  {left:2px; top:10px;}
+    100% {left:0px; top:0px;}
+}
+@keyframes praise-it4 {
+    0%   {left:27px; top:10px;}
+    14%  {left:50px; top:77px;}
+    50%  {left:400px; top:290px;}
+    75%  {left:15px; top:20px;}
+    100% {left:379px; top:0px;}
+}
+@keyframes praise-it5 {
+    0%   {left:500px; top:20px;}
+    33%  {left:0px; top:50px;}
+    73%  {left:400px; top:600px;}
+    75%  {left:279px; top:270px;}
+    100% {left:30px; top:280px;}
+}
+.back3{
+    background-image: url("../img/lothric.png");
+    background-repeat: no-repeat;
+    background-size: 2300px;
+    margin-top: -50px;
+    padding-bottom: 20px;
+}
+.back4{
+    background: rgba(4%,71%, 100%, 0.5);
+    padding: 30px 50px 0px 50px;
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 100px;
+
+}
+input{
+    width: 700px;
+}
+.reg{
+    margin: 20px;
+    table-layout: fixed;
+}
+th{
+    width: 200px;
+}
+.radiolabel{
+    vertical-align: middle;
+    text-align: center;
+
+}
+.button{
+    display: inline;
+}
+@media (max-width: 1245px) { /*change image margin so it doesn't go offscreen when screen size changes*/
+    input{
+        width: 250px;
+    }
+}
+@media (max-width: 800px) { /*change image margin so it doesn't go offscreen when screen size changes*/
+    input{
+        width: 150px;
+    }
+}
+@media (max-width: 543px) { /*change image margin so it doesn't go offscreen when screen size changes*/
+    input{
+        width: 100px;
+    }
+}
+@media (max-width: 550px) { /*change image margin so it doesn't go offscreen when screen size changes*/
+    input{
+        width: 50px;
+    }
+}
+@media (max-width: 300px) { /*change image margin so it doesn't go offscreen when screen size changes*/
+    input{
+        width: 15px;
+    }
+    .reg{
+        margin: -20px;
+    }
+}
+.footer2{
+    background-color: black;
+}
+.bod{
+    background-color: black;
+}
+.msg{
+    font-size: 16px;
+    font-family: monospace;
+    color: red;
+    margin: 5px 0px 5px 5px;
+}
+
+.ulfooter{
+    text-align: center;
+    padding-bottom: 20px;
+}
