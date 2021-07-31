@@ -2,14 +2,15 @@
 <?php
     include 'connectionInfo.php';
 ?>
+<?php
+    include 'selectUserData.php';
+?>
 <html lang = "en">
 <head>
-    <?php define("title", "Confirmation"); ?>
-    <title><?php echo title; ?></title>
+    <title>Confirmation</title>
     <meta charset = "utf-8" />
 </head>
 <body>
-<h1><?php echo title; ?></h1>
 <br/>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,9 +25,6 @@
     <script type="text/javascript" src="../js/registration.js"></script>
 </head>
 <body class="bod">
-<?php
-    include 'selectUserData.php';
-?>
 <!--Navbar-->
 <nav class="navbar navbar-inverse nav-background">
     <div class="container-fluid">
@@ -54,45 +52,45 @@
         <div class="back4">
             <div class="row">
                 <h1>Confirmation Page</h1>
-                <form id="myForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                <form id="myForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                     <div class="col-sm-12 col-md-12 col-lg-12">
                         <div class="table-responsive">
                             <table class="reg">
                                 <tr>
                                     <th>
                                         <label>Username:<input disabled type ="username" id="username" name="username" maxlength="50"
-                                                               value="<?php echo $username; ?>" /></label>
+                                                               value="<?php echo $username;?>" /></label>
                                     </th>
                                     <th>
                                         <label>Password:<input disabled type ="password" id="password" name="password" maxlength="50"
-                                                               value="<?php echo $password; ?>" /></label>
+                                                               value="<?php echo $password;?>" /></label>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th></th>
                                     <th>
                                         <label>Repeat Password:<input disabled type ="password" id="password2" name="password2" maxlength="50"
-                                                                      value="<?php echo $password2; ?>" /></label>
+                                                                      value="<?php echo $password2;?>" /></label>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th>
                                         <label>First Name:<input disabled type ="text" id="first" name="first" maxlength="50"
-                                                                 value="<?php echo $first; ?>"/></label>
+                                                                 value="<?php echo $first;?>"/></label>
                                     </th>
                                     <th>
                                         <label>Last Name:<input disabled type ="text" id="last" name="last" maxlength="50"
-                                                                value="<?php echo $last; ?>"/></label>
+                                                                value="<?php echo $last;?>"/></label>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th>
                                         <label>Address Line 1:<input disabled type ="text" id="address" name="address1" maxlength="100"
-                                                                     value="<?php echo $address1; ?>"/></label>
+                                                                     value="<?php echo $address1;?>"/></label>
                                     </th>
                                     <th>
                                         <label>Address Line 2:<input disabled type ="text" name="address2" maxlength="100"
-                                                                     value="<?php echo $address2; ?>"/></label>
+                                                                     value="<?php echo $address2;?>"/></label>
                                     </th>
                                 </tr>
                             </table>
@@ -104,13 +102,13 @@
                                 <tr>
                                     <th>
                                         <label>City:<input disabled type ="text" id="city" name="city" maxlength="50"
-                                                           value="<?php echo $city; ?>"/></label>
+                                                           value="<?php echo $city;?>"/></label>
                                     </th>
                                     <th>
                                         <label>State:</label>
                                         <p>
                                             <select disabled id="state" name="state"
-                                                    value="<?php echo $state; ?>">
+                                                    value="<?php echo $state;?>">
                                                 <option value=""></option>
                                                 <option> Alabama </option>
                                                 <option> Alaska </option>
@@ -169,35 +167,35 @@
                                 <tr>
                                     <th>
                                         <label>Zip Code:<input disabled type ="text" id="zip" name="zip" maxlength="10" placeholder="xxxxx"/
-                                            value="<?php echo $zip; ?>"></label>
+                                            value="<?php echo $zip;?>"></label>
                                     </th>
                                     <th>
                                         <label>Phone Number:<input disabled type ="text" id="phone" name="phone" maxlength="12" placeholder="xxx-xxx-xxxx"/
-                                            value="<?php echo $phone; ?>"></label>
+                                            value="<?php echo $phone;?>"></label>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th>
                                         <label>Email:<input disabled type ="email" id="email" name="email" maxlength="100" placeholder="coolperson@gmail.com"/
-                                            value="<?php echo $email; ?>"></label>
+                                            value="<?php echo $email;?>"></label>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th>
                                         <p style="text-align: center;"><strong><u>Gender</u></strong></p>
-                                        <label class="radiolabel">Male<input disabled class="button" type = "radio" name = "gender" <?php if($gender == "male"){echo "checked";} ?> value = "male" checked = "checked" /></label>
-                                        <label class="radiolabel">Female<input disabled type = "radio" name = "gender" <?php if($gender == "female"){echo "checked";} ?> value="female"/></label>
-                                        <label class="radiolabel">Other<input disabled type = "radio" name = "gender" <?php if($gender == "other"){echo "checked";} ?> value = "other"/></label>
+                                        <label class="radiolabel">Male<input disabled class="button" type = "radio" name = "gender" <?php if($gender == "male"){echo "checked";}?> value = "male" checked = "checked" /></label>
+                                        <label class="radiolabel">Female<input disabled type = "radio" name = "gender" <?php if($gender == "female"){echo "checked";}?> value="female"/></label>
+                                        <label class="radiolabel">Other<input disabled type = "radio" name = "gender" <?php if($gender == "other"){echo "checked";}?> value = "other"/></label>
                                     </th>
                                     <th>
                                         <p style="text-align: center; margin-top: -50px;"><strong><u>Marital Status</u></strong></p>
-                                        <label class="radiolabel">Single<input disabled type = "radio" name = "marital" <?php if($marital == "single"){echo "checked";} ?> value = "single" checked = "checked" /></label>
-                                        <label class="radiolabel">Married<input disabled type = "radio" name = "marital" <?php if($marital == "married"){echo "checked";} ?> value = "married"/></label>
+                                        <label class="radiolabel">Single<input disabled type = "radio" name = "marital" <?php if($marital == "single"){echo "checked";}?> value = "single" checked = "checked" /></label>
+                                        <label class="radiolabel">Married<input disabled type = "radio" name = "marital" <?php if($marital == "married"){echo "checked";}?> value = "married"/></label>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th>
-                                        <label>Date of Birth:<input disabled type="date" id="cal" name="cal" value="<?php echo $cal; ?>"  ></label>
+                                        <label>Date of Birth:<input disabled type="date" id="cal" name="cal" value="<?php echo $cal;?>"  ></label>
                                     </th>
                                 </tr>
                                 <tr>

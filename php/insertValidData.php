@@ -32,7 +32,7 @@ if ($isValid) {
         $last_id = $conn->lastInsertId();
         $_SESSION["last_id"] = "$last_id";
 
-        header("Location: confirmation.php");
+        echo("<script>location.href = 'confirmation.php';</script>");
 
     }
     catch(PDOException $e) {
