@@ -235,9 +235,19 @@ th{
 .button{
     display: inline;
 }
+@media (max-width: 2000px){
+    input{
+        width: 600px;
+    }
+}
+@media (max-width: 1500px){
+    input{
+        width: 210px;
+    }
+}
 @media (max-width: 1245px) { /*change image margin so it doesn't go offscreen when screen size changes*/
     input{
-        width: 250px;
+        width: 180px;
     }
 }
 @media (max-width: 800px) { /*change image margin so it doesn't go offscreen when screen size changes*/
@@ -278,5 +288,5 @@ th{
 
 .ulfooter{
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }

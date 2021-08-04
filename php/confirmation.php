@@ -51,7 +51,7 @@
     <div class="container-fluid">
         <div class="back4">
             <div class="row">
-                <h1>Confirmation Page</h1>
+                <h1>Confirmed</h1>
                 <form id="myForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                     <div class="col-sm-12 col-md-12 col-lg-12">
                         <div class="table-responsive">
@@ -109,7 +109,7 @@
                                         <p>
                                             <select disabled id="state" name="state"
                                                     value="<?php echo $state;?>">
-                                                <option value=""></option>
+                                                <option value="<?php echo $state;?>"></option>
                                                 <option> Alabama </option>
                                                 <option> Alaska </option>
                                                 <option> Arizona </option>
