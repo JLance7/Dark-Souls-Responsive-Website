@@ -1,2 +1,2 @@
 # Dark-Souls-Responsive-Website
-A website project for learning html, css, bootstrap 5, javascript, php, and MySQL
+A website about the game Dark Souls for the purpose of learning html, css, bootstrap 5, javascript, php, and MySQL
